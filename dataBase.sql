@@ -2,7 +2,7 @@ CREATE DATABASE prueba_octans;
 USE prueba_octans;
 
 CREATE TABLE Roles(
-	id_role int NOT NULL UNIQUE AUTO_INCREMENT,
+	id_role int NOT NULL UNIQUE,
     name varchar(255) NOT NULL UNIQUE,
     PRIMARY KEY (id_role)
 );
@@ -17,6 +17,6 @@ CREATE TABLE Users (
 );
 
 INSERT INTO Roles VALUES
-	(null, 'ADMINISTRADOR'),
-    (null, 'AUDITOR'),
-    (null, 'AUXILIAR');
+	(1, 'ADMINISTRADOR'),
+    (2, 'AUDITOR'),
+    (3, 'AUXILIAR');
